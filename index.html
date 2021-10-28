@@ -14,10 +14,45 @@
     <title>Choc🍫Mint🍃Weather🌤</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Choc🍫Mint🍃Weather🌤</h1>
+    <div class="App">
+      <div class="container">
+        <div class="Weather">
+          <img class="iceCream" src="images/Ice-creamWeather.png" width="75" />
 
-      <a href="" class="btn btn-primary"> Click Me </a>
+          <form>
+            <div class="row">
+              <div class="col-9">
+                <input
+                  class="form-control search-input"
+                  placeholder="Enter a city..."
+                  type="search"
+                />
+              </div>
+              <div class="col-3 p-0">
+                <input
+                  class="btn btn-primary w-100"
+                  value="Search"
+                  type="submit"
+                />
+              </div>
+            </div>
+          </form>
+
+          <div class="WeatherInfo"></div>
+
+          <footer>
+            "This project is being coded by sanjra:
+            <iframe
+              src="https://open.spotify.com/embed/track/1kdL29tfKlxVKxLiXy8WuS?theme=0"
+              width="50%"
+              height="380"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            ></iframe>
+          </footer>
+        </div>
+      </div>
     </div>
     <script src="src/app.js"></script>
   </body>
