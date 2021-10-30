@@ -85,9 +85,22 @@ ul {
   padding-inline-start: 40px;
 }
 
+.Weather li {
+  color: rgba(39, 33, 66, 0.4);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.Weather li strong {
+  color: #f65282;
+  font-weight: 400;
+}
+
 li {
   display: list-item;
-  list-style: none;
 }
 
 .WeatherInfo .temperature-container {
@@ -108,4 +121,13 @@ li {
   font-weight: 700;
   font-size: 80px;
   line-height: 1;
+}
+
+.Weather .unit {
+  color: #212121;
+  position: relative;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1;
+  top: -34px;
 }
