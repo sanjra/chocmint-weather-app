@@ -2,6 +2,7 @@ body {
   background: #f9f7fe;
   color: #212529;
   display: block;
+  font-family: "Questrial", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -44,6 +45,22 @@ form {
   margin-top: 20px;
 }
 
+.Weather h1 {
+  margin: 20px 0 10px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 48px;
+  color: #272142;
+}
+
+h1 {
+  display: block;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
 .col-6 {
   flex: 0 0 50%;
   max-width: 50%;
@@ -51,4 +68,43 @@ form {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+.Weather ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+li {
+  display: list-item;
+}
+
+.WeatherInfo .temperature-container {
+  margin-top: 30px;
+}
+
+.justify-content-end {
+  justify-content: flex-end !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.Weather .temperature {
+  color: #212121;
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 1;
 }
