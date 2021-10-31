@@ -67,10 +67,6 @@ body {
   display: inline-block;
 }
 
-.btn :hover {
-  background-color: #f469c2;
-}
-
 form {
   display: block;
 }
