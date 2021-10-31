@@ -124,7 +124,8 @@ ul {
   margin-bottom: 5px;
 }
 
-.Weather li strong {
+.Weather li strong,
+.sanjra {
   color: #f65282;
   font-weight: 400;
 }
