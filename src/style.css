@@ -34,6 +34,10 @@ body {
   color: #878787;
 }
 
+.Header {
+  border-bottom: 1px solid #f9f7fe;
+}
+
 .Weather form {
   margin-top: 40px;
   border-bottom: 1px solid #f9f7fe;
@@ -67,7 +71,7 @@ form {
 }
 
 .WeatherInfo {
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 .Weather h1 {
