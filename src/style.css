@@ -49,11 +49,11 @@ body {
   font-size: 16px;
   line-height: 20px;
   padding: 15px 20px;
-  color: rgba(39, 33, 66, 0.4);
+  color: rgba(240, 46, 170, 0.05);
 }
 
 .Weather .btn {
-  background: #885df1;
+  background: rgba(240, 46, 170, 0.2);
   font-weight: 700;
   font-size: 16px;
   padding: 15px 0;
@@ -155,4 +155,33 @@ li {
   font-size: 28px;
   line-height: 1;
   top: -34px;
+}
+
+.WeatherForecast {
+  text-align: center;
+  margin: 40px 0;
+  border-bottom: 1px solid #f9f7fe;
+  padding-bottom: 50px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.WeatherForecast .forecast-time {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: rgba(39, 33, 66, 0.4);
+  display: block;
+}
+
+.WeatherForecast .forecast-temperature {
+  font-size: 18px;
+  font-style: 18px;
+  line-height: 1.5;
+  text-align: center;
+  color: #f65282;
+  font-weight: 700;
 }
