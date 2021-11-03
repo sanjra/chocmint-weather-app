@@ -126,7 +126,6 @@ ul {
   line-height: 20px;
   list-style: none;
   margin-bottom: 5px;
-  text-transform: capitalize;
 }
 
 .Weather li strong {
@@ -136,6 +135,10 @@ ul {
 
 li {
   display: list-item;
+}
+
+li::first-letter {
+  text-transform: capitalize;
 }
 
 .WeatherInfo .temperature-container {
