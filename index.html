@@ -81,9 +81,16 @@
               <div class="col-6">
                 <div class="temperature-container d-flex justify-content-end">
                   <canvas width="52" height="52"></canvas>
-                  <div>
+                  <div class="clearfix weather-temperature">
+                    <img
+                      src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                      alt="partly_cloudy"
+                    />
+
                     <span class="temperature">11</span>
-                    <span class="unit">°C</span>
+                    <span class="unit"
+                      >°C | <a id="fahrenheit" href="#">°F</a></span
+                    >
                   </div>
                 </div>
               </div>

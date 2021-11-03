@@ -124,8 +124,7 @@ ul {
   margin-bottom: 5px;
 }
 
-.Weather li strong,
-.sanjra {
+.Weather li strong {
   color: #f65282;
   font-weight: 400;
 }
@@ -152,6 +151,12 @@ li {
   font-weight: 700;
   font-size: 80px;
   line-height: 1;
+}
+
+.weather-temperature img {
+  display: inline-block;
+  margin-left: 20px;
+  vertical-align: top;
 }
 
 .Weather .unit {
