@@ -39,6 +39,10 @@ body {
   padding-bottom: 20px;
 }
 
+.sanjra {
+  color: #f9a9dc;
+}
+
 .Weather form {
   margin-top: 30px;
   border-bottom: 1px solid #f9f7fe;
@@ -122,6 +126,7 @@ ul {
   line-height: 20px;
   list-style: none;
   margin-bottom: 5px;
+  text-transform: capitalize;
 }
 
 .Weather li strong {
