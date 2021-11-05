@@ -155,15 +155,13 @@ li::first-letter {
 
 .Weather .temperature {
   color: #212121;
-  margin-left: 10px;
+  margin: 20px;
   font-weight: 700;
   font-size: 80px;
   line-height: 1;
 }
 
 .weather-temperature img {
-  display: inline-block;
-  margin-left: 20px;
   vertical-align: top;
 }
 
