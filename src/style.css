@@ -10,8 +10,8 @@ body {
 }
 
 .App {
-  max-width: 800px;
   margin: 60px auto;
+  max-width: 800px;
 }
 
 .container {
@@ -39,36 +39,61 @@ body {
   padding-bottom: 20px;
 }
 
+a:link {
+  text-decoration: none;
+  color: #f9a9dc;
+}
+a:visited {
+  text-decoration: none;
+  color: #f9a9dc;
+}
+a:hover {
+  text-decoration: none;
+  color: #f9a9dc;
+}
+a:active {
+  text-decoration: none;
+  color: #f9a9dc;
+}
+
 .sanjra {
   color: #f9a9dc;
 }
 
 .Weather form {
-  margin-top: 30px;
   border-bottom: 1px solid #f9f7fe;
+  margin-top: 30px;
   padding-bottom: 30px;
 }
 
 .Weather .search-input {
   background: #f9f7fe;
   border: none;
+  color: rgba(240, 46, 170, 0.05);
   display: inline-block;
-  height: 50px;
   font-weight: 700;
   font-size: 16px;
+  height: 50px;
   line-height: 20px;
   padding: 15px 20px;
-  color: rgba(240, 46, 170, 0.05);
 }
 
 .Weather .btn {
   background: rgba(240, 46, 170, 0.2);
+  border: none;
+  color: #fff;
+  display: inline-block;
   font-weight: 700;
   font-size: 16px;
-  padding: 15px 0;
-  border: none;
   height: 50px;
-  display: inline-block;
+  padding: 15px 0;
+  transition: all ease-in-out 0.5s;
+}
+
+.btn:hover {
+  background-color: #abd9fd;
+  text-decoration: none;
+  color: #fff;
 }
 
 form {
@@ -80,11 +105,11 @@ form {
 }
 
 .Weather h1 {
-  margin: 20px 0 10px;
+  color: #272142;
   font-weight: 700;
   font-size: 38px;
   line-height: 48px;
-  color: #272142;
+  margin: 20px 0 10px;
 }
 
 h1 {
@@ -98,10 +123,10 @@ h1 {
 .col-6 {
   flex: 0 0 50%;
   max-width: 50%;
-  position: relative;
-  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+  position: relative;
+  width: 100%;
 }
 
 .Weather ul {
@@ -122,7 +147,7 @@ ul {
 .Weather li {
   color: rgba(39, 33, 66, 0.4);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 20px;
   list-style: none;
   margin-bottom: 5px;
@@ -156,8 +181,8 @@ li::first-letter {
 .Weather .temperature {
   color: #212121;
   margin: 20px;
-  font-weight: 700;
   font-size: 80px;
+  font-weight: 700;
   line-height: 1;
 }
 
@@ -177,37 +202,14 @@ li::first-letter {
 
 .Weather .unit {
   color: #212121;
-  position: relative;
-  font-weight: 400;
   font-size: 28px;
+  font-weight: 400;
   line-height: 1;
+  position: relative;
   top: -34px;
-}
-
-.WeatherForecast {
-  text-align: center;
-  margin: 40px 0px;
-  padding-top: 30px;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-}
-
-.WeatherForecast .forecast-time {
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: rgba(39, 33, 66, 0.4);
-  display: block;
-}
-
-.WeatherForecast .forecast-temperature {
-  font-size: 18px;
-  font-style: 18px;
-  line-height: 1.5;
-  text-align: center;
-  color: #f65282;
-  font-weight: 700;
 }

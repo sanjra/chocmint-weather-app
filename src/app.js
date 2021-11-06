@@ -41,7 +41,7 @@ function formatDate(timestamp) {
   let dateno = date.getDate();
   let year = date.getFullYear();
 
-  return `${day} ${dateno} ${month}, ${year} | ${hours}:${minutes}`;
+  return `${hours}:${minutes} | ${day} ${dateno} ${month}, ${year}`;
 }
 
 function displayTemperature(response) {
