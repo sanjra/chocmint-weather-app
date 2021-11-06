@@ -165,6 +165,15 @@ li::first-letter {
   vertical-align: top;
 }
 
+.weather-temperature .active {
+  color: #212121;
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
+
 .Weather .unit {
   color: #212121;
   position: relative;
