@@ -1,5 +1,6 @@
 //: alert
 // alert("hello world");
+// main date and time display
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
@@ -44,6 +45,7 @@ function formatDate(timestamp) {
   return `${hours}:${minutes} | ${day} ${dateno} ${month}, ${year}`;
 }
 
+// date function for forecast
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
@@ -60,6 +62,7 @@ function formatDay(timestamp) {
   return days[day];
 }
 
+// html forecast display
 function displayForecast(response) {
   // console.log(response.data.daily);
 
@@ -102,10 +105,12 @@ function getForecast(coordinates) {
   axios.get(apiUrl).then(displayForecast);
 }
 
+// temperature display
 function displayTemperature(response) {
   // console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
+  let countryElement = document.querySelector("#country");
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
@@ -116,6 +121,7 @@ function displayTemperature(response) {
 
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
+  countryElement.innerHTML = response.data.sys.country;
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
@@ -128,6 +134,8 @@ function displayTemperature(response) {
 
   getForecast(response.data.coord);
 }
+
+// search bar
 
 function search(city) {
   let apiKey = `34ae1065362d42545661451bda2b8a1f`;
