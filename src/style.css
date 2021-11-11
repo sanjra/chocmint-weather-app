@@ -209,7 +209,33 @@ li::first-letter {
   top: -34px;
 }
 
+.WeatherForecast {
+  margin: 20px 0px;
+  padding-top: 20px;
+  text-align: center;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
+}
+
+.WeatherForecast .forecast-date {
+  color: #48484a;
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.WeatherForecast .forecast-temperature {
+  color: #f65282;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.WeatherForecast .forecast-temperature-min {
+  color: #abd9fd;
+  font-size: 16px;
 }
