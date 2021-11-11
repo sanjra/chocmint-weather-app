@@ -44,6 +44,31 @@ function formatDate(timestamp) {
   return `${hours}:${minutes} | ${day} ${dateno} ${month}, ${year}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+
+  let days = ["Friday", "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `  
+              <div class="col-2">
+                <div class="forecast-date">${day}</div>
+                <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png" alt="" width="36" />
+                  <div class="forecast-temperature">
+                  <span class="forecast-temperature-max">19°</span
+                  ><span class="forecast-temperature-min"> 12°</span>
+                  </div> 
+              </div> 
+        `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayTemperature(response) {
   // console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
@@ -115,6 +140,9 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
+
+//moving this later
+displayForecast();
 
 // search fx at the bottom
 search("Milan");
